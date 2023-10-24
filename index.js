@@ -1,4 +1,6 @@
 import inquirer from "inquirer";
+import generateSVG from "./lib/generateSVG.js";
+
 
 const questions = [
      {
@@ -29,3 +31,11 @@ const questions = [
           message: "Enter a color keyword or a hexadecimal number for the shape's color.",
      },
 ];
+
+function init() {
+     inquirer.prompt(questions).then((answers) => {
+          generateSVG(answers);
+     });
+}
+
+init();
