@@ -1,0 +1,32 @@
+{
+  "name": "robs-svg-generator",
+  "version": "1.0.0",
+  "description": "A command line application to generate a simple SVG logo.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobSprouse/Robs-SVG-Generator.git"
+  },
+  "keywords": [
+    "SVG",
+    "logo",
+    "generator"
+  ],
+  "author": "RobSprouse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RobSprouse/Robs-SVG-Generator/issues"
+  },
+  "homepage": "https://github.com/RobSprouse/Robs-SVG-Generator#readme",
+  "dependencies": {
+    "inquirer": "^9.2.11",
+    "jest": "^29.7.0"
+  }
+}
