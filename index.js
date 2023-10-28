@@ -8,9 +8,7 @@ const questions = [
           name: "text",
           message: "Enter at least one to three characters",
           validate: function (value) {
-               if (value.length > 0 && value.length <= 3) {
-                    return true;
-               }
+               if (value.length > 0 && value.length <= 3) return true;
                return "Please enter at least one to three characters.";
           },
      },
