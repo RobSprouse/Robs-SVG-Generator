@@ -1,4 +1,6 @@
 import inquirer from "inquirer";
+import generateSVG from "./lib/generateSVG.js";
+
 
 const questions = [
      {
@@ -6,9 +8,7 @@ const questions = [
           name: "text",
           message: "Enter at least one to three characters",
           validate: function (value) {
-               if (value.length > 0 && value.length <= 3) {
-                    return true;
-               }
+               if (value.length > 0 && value.length <= 3) return true;
                return "Please enter at least one to three characters.";
           },
      },
@@ -29,3 +29,11 @@ const questions = [
           message: "Enter a color keyword or a hexadecimal number for the shape's color.",
      },
 ];
+
+function init() {
+     inquirer.prompt(questions).then((answers) => {
+          generateSVG(answers);
+     });
+}
+
+init();

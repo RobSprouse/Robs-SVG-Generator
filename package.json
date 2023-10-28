@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A command line application to generate a simple SVG logo.",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "example": "examples",
     "lib": "lib"
@@ -28,5 +29,10 @@
   "dependencies": {
     "inquirer": "^9.2.11",
     "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "babel-jest": "^29.7.0"
   }
 }
